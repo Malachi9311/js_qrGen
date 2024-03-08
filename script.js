@@ -8,5 +8,8 @@ const generateQR = () => {
         imgBox.classList.add('show-img');
     }else{
         qrText.classList.add('error');
+        setTimeout(() => {
+            qrText.classList.remove('error');
+        }, 1000)
     }
 }
